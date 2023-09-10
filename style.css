@@ -1,0 +1,894 @@
+* {
+  box-sizing: border-box !important;
+  outline: none !important;
+  border: none !important;
+  text-decoration: none !important;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 10% !important;
+  padding: 1.4rem 7% !important;
+  background-color: #00000080 !important;
+  border-bottom: 1px solid #00000080 !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9999 !important;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  color: #ffffff;
+  letter-spacing: 10%;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+.navbar-nav {
+  display: flex !important;
+  width: 34% !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+
+.navbar-nav a {
+  color: #ffffff !important;
+  font-size: 0.9rem !important;
+  font-family: "open sans";
+  font-weight: 700;
+}
+
+.navbar-register {
+  width: 13%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-register a {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-family: "open sans";
+  font-weight: 700;
+}
+
+.main-page {
+  background-image: radial-gradient(189.96% 61.18% at 50% 38.82%, rgba(255, 181, 72, 0) 0%, rgba(52, 44, 29, 0.80319) 73.22%, #08090A 99.74%), url("../assets/main-bg.jpg");
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.content-main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  margin-top: 6rem;
+}
+
+.title-main {
+  display: flex;
+  font-size: 3rem;
+  font-family: "arial";
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.explain-main {
+  display: flex;
+  font-family: "Arial", normal;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  line-height: 0.8rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+#btn-main {
+  margin-top: 1.8rem;
+  margin-bottom: 7.5rem;
+  font-size: 1rem;
+  font-family: "open sans";
+  font-weight: 700;
+  line-height: 0.2rem;
+  align-items: center;
+  width: 10.3rem;
+  height: 2.6rem;
+  border-radius: 0.2rem;
+}
+.sc-button {
+  margin-top: 3rem;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.story-txt {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: 6rem;
+  height: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scDown-SVG-Container {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+.svgScDwon {
+  fill: #ffffff;
+}
+
+.second-page {
+  background-image: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), url(../assets/the-games-bg.jpg);
+  min-height: 100vh!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 1.4rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.scnd-text {
+  width: 30%;
+  height: 50vh;
+  font-family: "Arial";
+  font-weight: 400;
+  margin-top: 2rem;
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.whatSpecial {
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+}
+
+.theGames {
+  letter-spacing: 0.2rem;
+  line-height: 1.5rem;
+}
+
+.scnd-img {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.swLeft-container .swLeft-svg {
+  width: 2rem;
+  height: 1rem;
+}
+
+.rockpaper-img {
+  width: 100%;
+  height: 100%;
+}
+
+.swRight-container .swRigth-svg {
+  width: 2rem;
+  height: 1rem;
+}
+
+.third-page {
+  background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url(../assets/features.jpg);
+  min-height: 100vh;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding-top: 4.3rem;
+}
+
+.thirdContainer {
+  width: 47%;
+  height: 70vh;
+  margin: 0;
+}
+
+.containerHeader {
+  width: 100%;
+  height: 25%;
+  margin: 0;
+  font-family: "Arial";
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.line1-header {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.line2-header {
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.containerFooter {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  padding-top: 0.5rem;
+}
+
+.svgCircle {
+  width: 12%;
+  height: 100%;
+}
+
+.subContentGames {
+  margin-top: 0.08rem;
+}
+
+.explainSubContent {
+  font-family: "Open Sans";
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  color: #ffffff;
+  width: 70%;
+  height: 11.8vh;
+}
+
+.subContenSuit {
+  width: 50%;
+  height: 7vh;
+}
+
+.subContentTBD {
+  margin-top: 0.2rem;
+  width: 50%;
+  height: 7vh;
+}
+
+.subContent {
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.15rem;
+  color: #ffb548;
+  text-decoration: none;
+}
+
+.fourth-page {
+  background-image: radial-gradient(
+      33.26% 45% at 64.32% 47.1%,
+      rgba(255, 255, 255, 0) 3.36%,
+      rgba(0, 0, 0, 0) 19.22%,
+      #080a0b 99.74%
+    ),
+    url(../assets/requirements.png);
+  min-height: 100vh;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding-top: 4rem;
+  padding-left: 5rem;
+  margin: 0rem;
+}
+
+.canMyComp {
+  width: 100%;
+  height: 5vh;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.canMyComp-txt {
+  color: #fff;
+  font-size: 0.8rem;
+  text-decoration: none;
+  line-height: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.specContainer {
+  width: 50%;
+  height: 70vh;
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sysReq-txt {
+  width: 100%;
+  height: 20%;
+}
+
+.sysRequirement {
+  color: #ffffff;
+  margin-left: 2rem;
+  width: 60%;
+}
+
+.containerTable{
+  width: 100%!important;
+}
+
+.fifth-page {
+  background-image: radial-gradient(
+      70.52% 37.27% at 24.21% 47.47%,
+      rgba(35, 15, 15, 0) 0%,
+      rgba(0, 0, 0, 0) 51.1%,
+      #080a0b 99.74%
+    ),
+    url(../assets/top-score-bg.png), url(../assets/top-score-bg\(2\).png);
+  background-size: cover;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 2.31%;
+  padding-bottom: 5%;
+  margin: 0;
+}
+
+.topScoreContainer {
+  width: 30%;
+  height: 35vh;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.textTopScoreContainer {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.seeMoreBtn {
+  width: 50%;
+}
+
+#btnSeeMore {
+  margin-top: 1rem;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 1rem;
+  width: 100%;
+  height: 80%;
+}
+
+.twitContainer {
+  width: 55%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+  color: #ffffff;
+}
+
+.evanLahti {
+  background-color: rgba(108, 108, 108, 50%);
+  width: 70%;
+  height: 30%;
+  padding: 0.1rem 0.5rem;
+  margin-left: 3.3rem;
+  border-radius: 0.51rem;
+}
+
+.evanLine {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  padding: 0.5rem;
+}
+
+.evanProfilPicture {
+  width: 4.3rem;
+  height: 4.3rem;
+  border: 1px solid #2626bd;
+  border-radius: 50%;
+  background-image: url(../assets/ellipse-orange.png);
+}
+
+.evanPhoto {
+  border-radius: 50%;
+  height: 4rem;
+  font-weight: 4rem;
+  border: 1px solid #000080;
+}
+
+.evanNameJob {
+  margin-left: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.names {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: "Arial";
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  color: #ffb548;
+  height: 50%;
+}
+
+.jobs {
+  font-size: 1.15rem;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #ffffff;
+  height: 50%;
+}
+
+.twitterEvan {
+  width: 40%;
+  height: 100%;
+  padding-left: 3rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.twitterLogo {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.evanCommentLine {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.2rem;
+  margin: 0;
+}
+
+.comments {
+  font-size: 0.75rem;
+  font-family: "Open Sans";
+  font-weight: 400;
+  line-height: 1rem;
+  height: 10%;
+  margin-bottom: 1.5rem;
+}
+
+.dates {
+  font-size: 0.8rem;
+  font-family: "Open Sans";
+  font-weight: 100;
+  line-height: 1rem;
+  margin-top: 0.2rem;
+  height: 10%;
+  color: #ffffff80;
+}
+
+.jadaGriffin {
+  background-color: rgba(108, 108, 108, 50%);
+  width: 70%;
+  height: 30%;
+  padding: 0.1rem 0.5rem;
+  margin-right: 1rem;
+  border-radius: 0.51rem;
+}
+
+.jadaLine {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  padding: 0.5rem;
+}
+
+.jadaProfilPicture {
+  width: 4.3rem;
+  height: 4.3rem;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  background-image: url(../assets/ellipse-orange.png);
+}
+
+.jadaPhoto {
+  border-radius: 50%;
+  height: 4rem;
+  border: 1px solid #000000;
+  font-weight: 4rem;
+}
+
+.jadaNameJob {
+  margin-left: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.twitterJada {
+  width: 37%;
+  height: 100%;
+  padding-left: 3rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.jadaCommentLine {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.aaronWilliams {
+  background-color: rgba(108, 108, 108, 50%);
+  width: 70%;
+  height: 30%;
+  padding: 0.1rem 0.5rem;
+  margin-left: 3.3rem;
+  border-radius: 0.51rem;
+}
+
+.aaronLine {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  padding: 0.5rem;
+}
+
+.aaronProfilPicture {
+  width: 4.3rem;
+  height: 4.3rem;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  background-image: url(../assets/ellipse-orange.png);
+}
+
+.aaronPhoto {
+  border-radius: 50%;
+  height: 4rem;
+  font-weight: 4rem;
+  border: 1px solid #000000;
+}
+
+.aaronNameJob {
+  margin-left: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  width: 60%;
+  height: 100%;
+}
+
+.twitterAaron {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aaronCommentLine {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.sixth-page {
+  background-color: #080a0b;
+  background-size: cover;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.containerSixth{
+  padding-top: 9rem!important;
+}
+.container{
+  padding-top: 10%;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100%;               
+  background-color:#FFFF00;
+  height: 1px;
+}
+
+#btnSubscribe {
+  font-family: "Open Sans" !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  width: 13rem !important;
+}
+
+.form-control:valid {
+  background-color: #ffffff14 !important;
+  border: none;
+}
+
+::placeholder {
+  color: #ffb548 !important;
+  font-size: 1.1rem !important;
+  font-family: "Open Sans" !important;
+  font-weight: 400 !important;
+  line-height: 1.4rem !important;
+}
+/* media query*/
+
+/* tablet */
+@media (max-width: 991.98px) {
+  html {
+    font-size: 80%!important;
+  }
+
+  .navbar-nav {
+    display: flex !important;
+    width: 60% !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+
+  .navbar-nav a {
+    color: #ffffff !important;
+    font-size: 0.9rem !important;
+  }
+
+  .navbar-register {
+    display: none !important;
+  }
+
+  .content-main{
+    margin-top: 2.5rem;
+  }
+  .title-main {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .second-page {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30rem;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+
+  .scnd-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0;
+    padding-top: 5.5rem;
+    margin-top: 0;
+    height: 50vh;
+    width: 35%;
+  }
+
+  .scnd-img {
+    height: 50vh;
+    width: 65%;
+  }
+
+  .img-container {
+    width: 100%;
+  }
+  .third-page {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 5rem;
+  }
+  .thirdContainer {
+    display: flex;
+    padding: 1rem;
+    margin-top: 5rem;
+    margin-right: 0;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .fourth-page {
+    background-image: radial-gradient(
+        33.26% 45% at 64.32% 47.1%,
+        rgba(255, 255, 255, 0) 3.36%,
+        rgba(0, 0, 0, 0) 19.22%,
+        #080a0b 99.74%
+      ),
+      url(../assets/requirements.png);
+    min-height: 100vh;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    margin: 0;
+    font-size: 40%!important;
+  }
+  
+  .canMyComp {
+    width: 100%;
+    height: 5vh;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .canMyComp-txt {
+    color: #ffffff;
+    font-size: 0.8rem;
+    text-decoration: none;
+    line-height: 1rem;
+    letter-spacing: 0.2rem;
+  }
+  
+  .specContainer {
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    padding-left: 0;
+    flex-direction: column;
+  }
+  .fifth-page {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 3rem;
+    font-size: 60%;
+  }
+
+  .topScoreContainer {
+    width: 30%;
+    padding-left: 0.2rem;
+  }
+
+  .seeMoreBtn {
+    width: 80%;
+    height: 20%;
+  }
+
+  .twitContainer {
+    margin-left: 0.5rem;
+    padding: 0;
+    display: flex;
+    width: 70%;
+    height: 50%;
+    font-size: 70%;
+    image-resolution: 70%;
+  }
+
+  .evanLahti {
+    margin-top: 0;
+    margin-left: 0;
+    width: 25rem;
+    height: 20vh;
+    margin-bottom: 1rem;
+  }
+
+  .jadaGriffin {
+    margin-right: 0;
+    width: 25rem;
+    height: 20vh;
+    margin-bottom: 1rem;
+  }
+
+  .aaronWilliams {
+    margin-left: 0;
+    width: 25rem;
+    height: 20vh;
+    margin-bottom: 1rem;
+  }
+
+  .containerSixth{
+    padding-top: 9rem!important;
+    font-size: 80%!important;
+  }
+  .row{
+    display: flex;
+    height: 50%!important;
+    font-size: 10%;
+  }
+  .col-md-3{
+    width: 50%;
+  }
+  img .img-fluid{
+    width: 25%;
+  }
+  footer{
+    font-size: 7rem!important;
+  }
+}
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 90%;
+  }
+}
